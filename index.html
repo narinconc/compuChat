@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CompuChat</title>
+
+<link rel="icon" href="favicon.ico">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* FONDO CLARO UPTC */
+    background: linear-gradient(135deg, #FFD100, #FFFFFF);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    color: #0033A0; /* AZUL PARA TEXTO */
+}
+
+/* CONTENEDOR */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* LOGO */
+.logo {
+    width: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* SOMBRA SUAVE AMARILLA */
+    box-shadow: 0 0 20px rgba(255, 209, 0, 0.6);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 209, 0, 0.9);
+}
+
+/* TÍTULO */
+h1 {
+    margin: 20px 0 10px;
+    font-size: 30px;
+    color: #0033A0;
+}
+
+/* TEXTO */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* INSTRUCCIÓN */
+.instruccion {
+    font-size: 14px;
+    color: #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- IMAGEN CLICKEABLE -->
+    <a href="LINK_DEL_CHATBOT" target="_blank">
+        <img src="T.png" alt="CompuChat" class="logo">
+    </a>
+
+    <!-- NOMBRE -->
+    <h1>CompuChat</h1>
+
+    <!-- DESCRIPCIÓN -->
+    <p>Aprende sobre las partes del computador de forma interactiva</p>
+
+  <p>Clic en el link para ir al compuChat</p>
+
+<script type="module">
+const typebotInitScript = document.createElement("script");
+typebotInitScript.type = "module";
+typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
+  
+Typebot.initStandard({ typebot: "compu-chat-38kagkx" });
+`;
+document.body.append(typebotInitScript);
+</script>
+
+</div>
+
+</body>
+</html>
